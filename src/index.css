@@ -1,13 +1,122 @@
+@font-face {
+  font-family: 'Cerebri Sans Regular';
+  src: local('CerebriSans-Regular'), url('./assets/fonts/Cerebri-Sans/CerebriSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans ExtraBold';
+  src: local('CerebriSans-ExtraBold'), url('./assets/fonts/Cerebri-Sans/CerebriSans-ExtraBold.woff') format('woff');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif; */
+    font-family: 'Cerebri Sans Regular' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #F9FBFD !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.maxWidth100Percent {
+  max-width: 100%;
+}
+
+.maxWidth50Percent {
+  max-width: 50%;
+}
+
+.maxHeight100Percent {
+  max-height: 100%;
+}
+
+.textAlignCenter{
+  text-align: center;
+}
+
+.textAlignLeft{
+  text-align: left;
+}
+
+.textAlignRight{
+  text-align: right;
+}
+
+.height100ViewHeight{
+  height: 100vh;
+}
+
+.height100Percent {
+  height: 100%;
+}
+
+.margin0{
+  margin: 0 auto !important;
+}
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aligner-item {
+  max-width: 50%;
+}
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+  .Aligner-item {
+    max-width: 100% !important;
+  }
+    
+}
+
+.cs-extra-bold {
+  font-family: 'Cerebri Sans ExtraBold';
+}
+
+.color-navy {
+  color: #12263F;
+}
+
+.color-pink {
+  color: #e83e8c !important;
+}
+
+.nav-pill {
+  min-height: 60px;
+  min-width: 80%;
+  color: #12263F !important;
+  border: none !important;
+  font-size: 1.25rem !important;
+  border-radius: 71px;
+}
+
+.nav-pill-not-active {
+  border: 3px solid #EDF2F9 !important;
+}
+
+.nav-pill:focus {
+  outline: 0;
+}
+
+.navy-background {
+  background: #12263F !important;
+}
+
+.color-white {
+  color: #FFFFFF !important;
+}
+
+.lift {
+  transition: box-shadow .25s ease,transform .25s ease-in-out;
 }

@@ -1,0 +1,33 @@
+.burn-input{
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.burn-form {
+    padding: 5%;
+    box-shadow: 0 1rem 2.5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.1)!important;
+    background: #FFFFFF !important;
+    border: 1px solid #edf2f9;
+    border-radius: 6px;
+}
+
+.confirm-btn {
+    background-color: #FFFFFF !important;
+    border:2px solid #12263F !important;
+    color: #12263F !important
+}
+
+.confirm-btn:hover {
+    background: #e83e8c !important;
+    border:2px solid #e83e8c !important;
+    color: #FFFFFF !important
+}
+
+.desc-text {
+    margin-top: 0 !important;
+}
+
+.v-center-col {
+    display: flex;
+    align-items: center;
+}

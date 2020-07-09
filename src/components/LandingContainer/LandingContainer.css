@@ -1,0 +1,145 @@
+.landing-h1 {
+    font-size: 4rem !important;
+}
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+    .landing-h1 {
+        font-size: 1.75rem !important;
+    }
+}
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+    .landing-h3 {
+        font-size: 1.25rem !important;
+    }
+}
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+    .landing-ol {
+        font-size: 0.8rem !important;
+    }
+}
+
+.landing-button {
+    min-height: 60px;
+    min-width: 100%;
+    color: #12263F !important;
+    box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, .03);
+    background: #FFFFFF !important;
+    border: 1px solid #12263F;
+    font-size: 1.25rem !important;
+    border-radius: 6px;
+    transition: box-shadow .25s ease,transform .25s ease, background-color .25s ease;
+}
+
+.landing-button:hover {
+    box-shadow: 0 1rem 2.5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.1)!important;
+    background-color: #fcfcfc !important;
+    transform: translate3d(0,-3px,0);
+}
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+    .landing-button {
+        min-height: 40px !important;
+        font-size: 0.8rem !important;
+        transition: none !important
+    }
+
+    .landing-button:focus {
+        box-shadow: none!important;
+        background-color: #fcfcfc !important;
+        transition: none !important;
+        transform: none !important;
+    }
+
+    .landing-button:hover {
+        box-shadow: none !important;
+        background-color: #fcfcfc !important;
+        transition: none !important;
+        transform: none !important;
+    }
+
+    .landing-button:active {
+        box-shadow: none!important;
+        background-color: #fcfcfc !important;
+        transition: none !important;
+        transform: none !important;
+    }
+}
+
+
+.lift {
+    transition: box-shadow .25s ease,transform .25s ease-in-out;
+}
+
+.landing-button:focus {
+    outline: 0;
+}
+
+code {
+    background: #FFFFFF;
+    border: 1px solid #edf2f9;
+    border-radius: 2px;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+
+a.address-link  {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+a:hover.address-link {
+     color:inherit !important; 
+     text-decoration:none !important; 
+     cursor:pointer !important;  
+}
+
+a.pink-link  {
+    color: #e83e8c !important;
+    text-decoration: none !important;
+}
+
+a:hover.pink-link {
+     color:#e83e8c !important; 
+     text-decoration:none !important; 
+     cursor:pointer !important;  
+}
+
+.warning-badge {
+    background: rgba(232,62,140, 0.5) !important;
+    border: 1px solid #e83e8c !important; 
+
+}
+
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+    .landing-h5 {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+    .landing-h6 {
+        font-size: 0.7rem !important;
+    }
+}
