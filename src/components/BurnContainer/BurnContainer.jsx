@@ -188,7 +188,7 @@ class BurnContainer extends React.Component {
                 <Row className="margin0 textAlignCenter height100Percent Aligner" style={{height:"80vh", paddingLeft: "5%", paddingRight: "5%", maxWidth:"70%"}}>
                     <Col className="Aligner-item" md="12">
                     <Form className="burn-form" style={{textAlign: "left"}}>
-                        <h1 style={{textAlign:"left", marginBottom: "5%"}}>Mint QED</h1>
+                        <h1 style={{textAlign:"left", marginBottom: "1%"}}>Mint QED</h1>
                         <FormGroup row>
                             <Label for="mintReceivingAddress" sm={3}>Receiving address
                             <FormText  className="desc-text">
@@ -230,7 +230,7 @@ class BurnContainer extends React.Component {
                             </Col>
                         </FormGroup>
                         <FormGroup row>
-                            <Label for="qedAmount" sm={3}>Approximate issuance
+                            <Label for="qedAmount" sm={3}>Issuance
                             <FormText  className="desc-text">
                                 QED to be issued
                             </FormText>
@@ -242,7 +242,7 @@ class BurnContainer extends React.Component {
                         <div style={{textAlign: "center"}}>
                             <Button 
                                 className="confirm-btn" 
-                                style={{minWidth:"70%", minHeight:"60px", textAlign: "center", marginTop: "5%"}}
+                                style={{minWidth:"70%", minHeight:"60px", textAlign: "center", marginTop: "1%"}}
                                 onClick={this.handleMint}>
                                 Mint QED
                             </Button>
