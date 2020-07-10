@@ -33,12 +33,13 @@ class LandingContainer extends React.Component {
       <div style={{height: "100%"}}>
             <div className="maxWidth100Percent maxHeight100Percent height100Percent OuterLandingDiv">
                 <Row className="maxWidth100 margin0 textAlignCenter height100Percent Aligner" style={{paddingLeft: "5%", paddingRight: "5%", borderBottom: "1px solid #12263F"}}>
-                    <Col className="Aligner-item" md="12" style={{marginBottom: "2%"}}>
+                    <Col className="Aligner-item" md="12" style={{marginBottom: "3%"}}>
                         <h1 className="cs-extra-bold landing-h1 color-navy" style={{textAlign:"center"}}>A stablecoin backed<br/>by nothing</h1>
-                        <h5 className="color-navy landing-h5" style={{marginTop: "2%"}}>Stop using fiat-backed stablecoins and complicated stablecoin procotols <span role="img" aria-label="thumbs-down">👎</span></h5>
-                        <h5 className="color-navy  landing-h5">Burn 1 USD worth of ETH to create 1 QED <span role="img" aria-label="thumbs-up">👍</span></h5>
-                        <a className="address-link" target="blank" rel="noopener noreferrer" href={`https://kovan.etherscan.io/address/${process.env.REACT_APP_STABLE_PROOFS_ADDRESS}`}><h6 style={{marginTop: "2%"}} className="landing-h6">Token contract address: <code>{process.env.REACT_APP_STABLE_PROOFS_ADDRESS}</code></h6></a>
-                        <p className="color-navy landing-h6" style={{marginBottom: "0.5rem"}}>Check out the code on <span><a className="pink-link" href="https://github.com/StableProofs" target="_blank" rel="noopener noreferrer">Github</a></span> and <span><a className="pink-link" href={`https://kovan.etherscan.io/bytecode-decompiler?a=${process.env.REACT_APP_STABLE_PROOFS_ADDRESS}`} target="_blank" rel="noopener noreferrer">Etherscan</a></span></p>
+                        {/* <h5 className="color-navy landing-h5" style={{marginTop: "2%"}}>Stop using fiat-backed stablecoins and complicated stablecoin procotols <span role="img" aria-label="thumbs-down">👎</span></h5> */}
+                        {/* <h3 className="color-navy  landing-h5" style={{marginTop: "2%"}}>Burn 1 USD worth of ETH to create 1 QED <span role="img" aria-label="thumbs-up">👍</span></h3> */}
+                        <h3 className="color-navy  landing-h5" style={{marginTop: "2%"}}><span role="img" aria-label="thumbs-up">🔥</span>Burn 1 USD worth of ETH to create 1 QED<span role="img" aria-label="thumbs-up">🔥</span></h3>
+                        {/* <a className="address-link" target="blank" rel="noopener noreferrer" href={`https://etherscan.io/address/${process.env.REACT_APP_STABLE_PROOFS_ADDRESS}`}><h6 style={{marginTop: "2%"}} className="landing-h6">Token contract address: <code>{process.env.REACT_APP_STABLE_PROOFS_ADDRESS}</code></h6></a> */}
+                        <p className="color-navy landing-h6" style={{marginBottom: "0.5rem", marginTop: "2%"}}>Check out the code on <span><a className="pink-link" href="https://github.com/StableProofs" target="_blank" rel="noopener noreferrer">Github</a></span> and <span><a className="pink-link" href={`https://etherscan.io/address/${process.env.REACT_APP_STABLE_PROOFS_ADDRESS}`} target="_blank" rel="noopener noreferrer">Etherscan</a></span></p>
                         <p className="color-navy landing-h6" style={{marginBottom: "0"}}><Badge className="warning-badge"><span role="img" aria-label="skull">☠️</span>This contract is unaudited, use at your own risk <span role="img" aria-label="skull">☠️</span></Badge></p>
                     </Col>
                     <Col className="Aligner-item" md="12" style={{maxWidth:"50%", margin:"0 auto", textAlign:"left", marginBottom:"2%"}}>
@@ -56,6 +57,7 @@ class LandingContainer extends React.Component {
                             <LinkButton
                                 className="landing-button"
                                 style={{minWidth: "50%"}}
+                                to=""
                                 disabled
                                 >Desktop only <span role="img" aria-label="comp">🖥</span></LinkButton>
                             </Col>
@@ -129,7 +131,7 @@ class LandingContainer extends React.Component {
                             <li>
                                 Where does the ETH/USD price come from?
                                 <ul>
-                                    <li>I publish <a href="https://docs.pro.coinbase.com/#oracle" target="blank" rel="noopener noreferrer" className="pink-link">Coinbase Oracle</a> price data on-chain at <a href={`https://kovan.etherscan.io/address/${process.env.REACT_APP_ORACLE_ADDRESS}`} target="blank" rel="noopener noreferrer" className="pink-link">this address</a>. The <code>mint()</code> method reads the ETH/USD price from this oracle contract.</li>
+                                    <li>I publish <a href="https://docs.pro.coinbase.com/#oracle" target="blank" rel="noopener noreferrer" className="pink-link">Coinbase Oracle</a> price data on-chain at <a href={`https://etherscan.io/address/${process.env.REACT_APP_ORACLE_ADDRESS}`} target="blank" rel="noopener noreferrer" className="pink-link">this address</a>. The <code>mint()</code> method reads the ETH/USD price from this oracle contract.</li>
                                 </ul>
                                 
                             </li>
