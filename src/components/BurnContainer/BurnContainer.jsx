@@ -99,7 +99,7 @@ class BurnContainer extends React.Component {
     } 
 
     async handleMint( event ) {
-        console.log( 'CALLED HANDLE MINT WITH: ', this.state.mintReceivingAddress, this.state.mintAmount);
+        // console.log( 'CALLED HANDLE MINT WITH: ', this.state.mintReceivingAddress, this.state.mintAmount);
         const providerOptions = {
             /* See Provider Options Section */
           };
@@ -121,7 +121,8 @@ class BurnContainer extends React.Component {
         const isValidAddress = await this.validateAddress()
 
         if ( isValidAddress ) {
-            contractInstance.methods.mint(this.state.mintReceivingAddress).send({ from: this.state.provider.selectedAddress, value: '200000000000000000'})
+            const mintString = parseInt(Number(this.state.mintAmount) * 1e18).toString()
+            contractInstance.methods.mint(this.state.mintReceivingAddress).send({ from: this.state.provider.selectedAddress, value: mintString})
             .then(function(receipt){
                 console.log( 'MINT RECEIPT: ', receipt )
             });
@@ -160,7 +161,7 @@ class BurnContainer extends React.Component {
         const web3 = new Web3(null);
         try {
             const address = web3.utils.toChecksumAddress(this.state.mintReceivingAddress)
-            console.log( 'Validated Address: ', address )
+            // console.log( 'Validated Address: ', address )
             return true;
           } catch(e) { 
             alert('Invalid Ethereum address')
