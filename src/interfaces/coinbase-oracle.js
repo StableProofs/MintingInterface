@@ -152,6 +152,25 @@ const coinbaseOracle = {
     "version": "0.1.0b16+commit.df97c9c"
   },
   "networks": {
+    "1": {
+      "events": {
+        "0x66cbca4f3c64fecf1dcb9ce094abcf7f68c3450a1d4e3a8e917dd621edb4ebe0": {
+          "name": "PriceUpdated",
+          "inputs": [
+            {
+              "type": "uint256",
+              "name": "price",
+              "indexed": false
+            }
+          ],
+          "anonymous": false,
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x10aE587d697673773d34cB7f49a4261E823db689",
+      "transactionHash": "0xf96b9594747f22dccb272d26fba9e590cd0ec518743fb73d556318964ac3f95a"
+    },
     "42": {
       "events": {
         "0x66cbca4f3c64fecf1dcb9ce094abcf7f68c3450a1d4e3a8e917dd621edb4ebe0": {
@@ -173,7 +192,8 @@ const coinbaseOracle = {
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-07-09T19:53:19.724Z"
+  "updatedAt": "2020-07-10T19:25:30.342Z",
+  "networkType": "ethereum"
 }
 
 module.exports = coinbaseOracle;

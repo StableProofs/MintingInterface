@@ -468,6 +468,96 @@ const proofsABI = {
     "version": "0.1.0b16+commit.df97c9c"
   },
   "networks": {
+    "1": {
+      "events": {
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "name": "Transfer",
+          "inputs": [
+            {
+              "type": "address",
+              "name": "sender",
+              "indexed": true
+            },
+            {
+              "type": "address",
+              "name": "receiver",
+              "indexed": true
+            },
+            {
+              "type": "uint256",
+              "name": "value",
+              "indexed": false
+            }
+          ],
+          "anonymous": false,
+          "type": "event"
+        },
+        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
+          "name": "Approval",
+          "inputs": [
+            {
+              "type": "address",
+              "name": "owner",
+              "indexed": true
+            },
+            {
+              "type": "address",
+              "name": "spender",
+              "indexed": true
+            },
+            {
+              "type": "uint256",
+              "name": "value",
+              "indexed": false
+            }
+          ],
+          "anonymous": false,
+          "type": "event"
+        },
+        "0x2f00e3cdd69a77be7ed215ec7b2a36784dd158f921fca79ac29deffa353fe6ee": {
+          "name": "Mint",
+          "inputs": [
+            {
+              "type": "address",
+              "name": "minter",
+              "indexed": true
+            },
+            {
+              "type": "address",
+              "name": "receiver",
+              "indexed": true
+            },
+            {
+              "type": "uint256",
+              "name": "value",
+              "indexed": false
+            },
+            {
+              "type": "uint256",
+              "name": "mint",
+              "indexed": false
+            }
+          ],
+          "anonymous": false,
+          "type": "event"
+        },
+        "0x752d7e161ff5146f80e3820893176eb40532811e5e20400dfdde57455213706a": {
+          "name": "ContractPaused",
+          "inputs": [
+            {
+              "type": "bool",
+              "name": "isPaused",
+              "indexed": false
+            }
+          ],
+          "anonymous": false,
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xec72Fe7CeB26f6Bee3094925AC17C66A24C9e72B",
+      "transactionHash": "0x84e2bb78c78a48aa800d703ed382cb66a30b7ff18028f25dd4ddc4442b3b1d00"
+    },
     "42": {
       "events": {
         "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
@@ -560,7 +650,8 @@ const proofsABI = {
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-07-09T19:53:19.725Z"
+  "updatedAt": "2020-07-10T19:25:30.347Z",
+  "networkType": "ethereum"
 }
 
 module.exports = proofsABI;

@@ -35,7 +35,7 @@ class BurnContainer extends React.Component {
           };
           
           const web3Modal = new Web3Modal({
-            network: "kovan", // optional
+            network: "mainnet", // optional
             cacheProvider: true, // optional
             providerOptions // required
           });
@@ -105,7 +105,7 @@ class BurnContainer extends React.Component {
           };
           
         const web3Modal = new Web3Modal({
-            network: "kovan", // optional
+            network: "mainnet", // optional
             cacheProvider: true, // optional
             providerOptions // required
           });
